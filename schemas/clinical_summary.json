@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clinical Summary",
+  "type": "object",
+  "properties": {
+    "chief_complaint": {"type": "string"},
+    "assessment": {"type": "string"},
+    "plan": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "risks": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "required": ["chief_complaint", "assessment", "plan", "risks", "missing_information"]
+}

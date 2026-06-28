@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prior Authorization Decision",
+  "type": "object",
+  "properties": {
+    "request_type": {"type": "string"},
+    "required_evidence": {"type": "object"},
+    "decision_support": {"type": "string"},
+    "manual_review": {"type": "boolean"}
+  },
+  "required": ["request_type", "required_evidence", "decision_support", "manual_review"]
+}
